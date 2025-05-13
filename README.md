@@ -1,7 +1,5 @@
 # 🌐 NTI Frontend Task – Responsive Website Project
 
-![Project Banner](https://via.placeholder.com/1000x300?text=Your+Project+Banner) <!-- يمكنك تعديل الرابط بصورة من موقعك -->
-
 ## 📌 Project Overview
 
 This project is part of a frontend web development task assigned during the **NTI Training Program**. The goal was to design and develop a **responsive static website** using **HTML5** and **CSS3**, focusing on clean structure, modern layout, and cross-device compatibility.

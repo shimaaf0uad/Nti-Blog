@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#e43c5c;
+    --main-text:#444444;
+    --main-shadow: 0px -3px 3px 2px rgba(222, 221, 221,0.5), 
+    0px 3px 3px 2px rgba(222, 221, 221,0.5);
+}
+ 
+.maincolor{
+    color: #e43c5c !important;
+}
+
+.maincolortxt{
+    color: #444444;
+}
+i{
+    color: var(--main-color);
+    font-size: x-large;
+    margin-bottom: 16px;
+}
+
+#about p{
+    color: var(--main-text);
+}
+.navbar a{
+    color: white !important;
+    font-weight: bold;
+}
+
+header{
+    background-image: linear-gradient( rgba(51, 43, 43, 0.7),rgba(37, 33, 33, 0.7),rgba(47, 42, 42, 0.7)), url('https://nti-project.vercel.app/assets/img/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.h-80{
+    height: 80%;
+}
+
+.btn-outline-light,
+.btn-outline-danger,
+.btn-outline-secondary{
+    border-radius: 20px !important;
+   
+}
+
+.heading-style{
+    color: var(--main-color);
+    background-color: rgba(226, 105, 127, 0.5);
+    width: fit-content;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: block;
+    margin: auto;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+
+}
+
+.heading-span-style{
+    color: #e43c5c;
+}
+
+.card-design{
+    background-color: white;
+    box-shadow: var(--main-shadow);
+    padding: 30px 20px;
+}
+
+
+
+#about h3:hover{
+color: var(--main-color);
+}
+
+.card-design:hover{
+  
+    color: white;
+    transition: background-color 2s;
+    transform-origin: bottom;
+    animation: card-animate 1s 0.5s;
+}
+
+.card-hover:hover{
+    border-color: var(--main-color) !important;
+}
+
+#price button:hover{
+    background-color: #e43c5c !important;
+    color: white !important;
+    border: none !important;
+}
+
+
+@keyframes card-animate {
+    0%{
+       height: 10%;
+       background-color: #fff;
+    }
+    20%{
+        height: 25%;
+
+    }
+    50%{
+        height: 45%;
+    }
+    75%{
+        height: 70%;
+    }
+    100%{
+        height: 100%;
+        background-color: var(--main-color);
+    }
+    
+}
+
+.call{
+    background-image: linear-gradient( rgba(51, 43, 43, 0.7),rgba(37, 33, 33, 0.7),rgba(47, 42, 42, 0.7)),url('https://nti-project.vercel.app/assets/img/cta-bg.jpg');
+    height: 50vh;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.ovelayportfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255,0.7);
+    display: none;
+}
+
+.item:hover .ovelayportfolio{
+    display: flex;
+    transition: display 5s 2s;
+    padding: 15px;
+}
+
+.col-md-3-5 {
+    flex: 0 0 29.1667%; 
+    max-width: 29.1667%;
+}
+
+
+.card-middle{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid var(--main-color);
+    border-radius: 20px;
+    padding: 40px;
+  
+    
+}
+.card-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-color: white;
+    box-shadow: var(--main-shadow);
+    border-radius: 20px;
+    height: 90vh;
+   
+}
+
+ul{
+    list-style: none;
+}
+
+.fs-14{
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.accordion-bg{
+    background-color: rgba(#e43c5c, #e43c5c, #e43c5c, 0.5) !important;
+}
+
+.card-icon-hover2{
+    i{
+        color: #fff;
+    }
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transition:  height 0.5s;
+    position: relative;
+    transition: animation 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .text-slide-in {
+    animation:slideInFromBottom  1s ease-out forwards;
+  }
+  
+
+
+.team-card-style{
+    box-shadow: var(--main-shadow);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-icon-hover{
+    background-color: rgba(255,255,255,0.7);
+    visibility: hidden;
+    transition:  visibility 0.5s;
+
+    i{
+        color: var(--main-text);
+    }
+}
+
+.img-card:hover .card-icon-hover,
+.img-card:hover .card-icon-hover2{
+  visibility: visible;
+}
+
+
+.img-card{
+    overflow: hidden;
+}
+.card-icon-hover2-content{
+    position: absolute;
+    justify-content: center;
+    
+}
+
+
+@keyframes animate-txt {
+    0%{
+        top:10%
+    }
+    50%{
+        top: 20%;
+    }
+    100%{
+        top: 25%;
+    }
+
+
+}
+
+.img-card{
+position: relative;
+overflow: hidden;
+}
+
+.img-card:hover .card-icon-hover2{
+animation: card-animate-2 .2s 2s ;
+opacity: 1;
+
+}
+
+@keyframes card-animate-2 {
+    0%{
+        opacity: 0;
+        
+        height: 10%;
+    }
+    25%{
+       height: 25%;
+    }
+    50%{
+       height: 50%;
+    }
+    75%{
+       height: 75%;
+    }
+    100%{
+        opacity: 1;
+        
+        height: 100%;
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 75%;
+    margin: auto;
+  }
+
+  .card-portfolio {
+    border-radius: 10px;
+    padding: 1rem;
+  
+  }
+
+  .card-portfolio.large {
+    grid-column: span 2;
+  }
+
+  .card-portfolio.tall {
+    grid-row: span 2;
+  }
+.map-h{
+    height: 300px;
+}
+
+.contact-icon{
+    background-color: var(--main-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.send-btn{
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+footer li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+textarea{
+    resize: none;
+}
+
+.upbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background-color: var(--main-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dropdown-menu  li a{
+    color: #000 !important;
+}
+
+.dropdown-menu  li a:hover{
+    color: var(--main-color) !important;
+}
+
+.about-btn{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.about-btn i{
+    font-size: 14px;
+}
+
+section{
+    padding: 100px 0;
+
+}
+
+
+
+
+
+

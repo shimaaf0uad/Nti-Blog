@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7">
-     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-     
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" />
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Tempo</title>
   </head>
   <body class="position-relative">
@@ -22,7 +23,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container">
-          <a class="navbar-brand fs-2 text-white" href="#">Tempo</a>
+          <a class="navbar-brand fs-2" href="#">Tempo</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,8 +31,8 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
-          
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,19 +41,19 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#About">About</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Services">Services</a>
+                <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Portfolio">Portfolio</a>
+                <a class="nav-link" href="#">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Team">Team</a>
+                <a class="nav-link" href="#">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Blog">Blog</a>
+                <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -73,8 +74,8 @@
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                   
+                      aria-expanded="false"
+                    >
                       Dropdown
                     </a>
                     <ul class="dropdown-menu">
@@ -108,8 +109,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact</a>
-               
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -123,496 +123,781 @@
         <p class="fs-5 text-center text-slide-in">
           We are team of talented designers making websites with Bootstrap
         </p>
-        <!-- <button type="button" class="btn btn-danger text-white text-slide-in hero-btn">
+        <button type="button" class="btn btn-outline-light text-slide-in">
           Get Started
         </button>
-         -->
-         <button type="button" class="btn btn-outline-danger hero-btn text-slide-in">
-          Get Started
-        </button>
-        
       </div>
     </header>
- 
-<!-- About section -->
-  <!-- <section id="About" class="py-5">
-    <div class="text-center">
-      <h1 class="about-heading">ABOUT</h1>
-    <p class="text-center fs-3 fw-bold">
-      Learn More <span class="heading-span-style">About Us</span>
-    </p> 
-    </div>
-    
-
-  <div class="container mt-5 p-4 text-slide-in">
-    <div class="row gy-5">
-      <div class="col-sm-12 col-lg-5 p-5">
-        <h3 class="mb-4"> Voluptatem dignissimos provident quasi</h3>
-        <p class="dongo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-          aute irure dolor in reprehenderit
-           </p>
-          <button type="button" class="btn btn-outline-danger btn-sm about-btn">
-          <span style="font-size: 12px;">ABOUT US</span> 
-          <i class="fa fa-chevron-right text-danger pt-1" style="font-size: 14px;"></i> 
-        </button> 
-      </div>
-
-      <div class="col-sm-12 col-lg-3">
-        <div class="row mb-4">
-           <i class="fa fa-briefcase"></i> 
-         <i class="bi bi fa-briefcase"></i>
-          <h3 class="hover-title">Corporis voluptates sit</h3>
-          <p class="dongo">
-            Consequuntur sunt aut quasi enim aliquam quae harum pariatur
-            laboris nisi ut aliquip
-          </p>
-        </div>
-
-        <div class="row">
-          <i class="fa-solid fa-tower-broadcast"></i>
-          <h3 class="hover-title">Labore consequatur</h3>
-          <p class="dongo">
-            Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
-            maiores omnis facere
-          </p>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4">
-        <div class="row mb-4">
-          <i class="fa fa-gem"></i>
-          <h3 class="hover-title">Ullamco laboris nisi</h3>
-          <p class="dongo">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt
-          </p>
-        </div>
-
-        <div class="row">
-          <i class="fa-solid fa-tv"></i>
-          <h3 class="hover-title">Beatae veritatis</h3>
-          <p class="dongo">
-            Expedita veritatis consequuntur nihil tempore laudantium vitae
-            denat pacta
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-    <!--Services section  -->
-  
-  <!-- <section id="Services" class="py-5">
-
-     <div class="text-center">
-        <h2 class="title">Services</h2>
-        <p class="text-center fs-3 fw-bold">
-          Check Our <span class="heading-span-style">Services</span>
-         </p> 
-      </div>
-
-      <div class="row gy-2">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-eye text-warning"></i>
-            <p>Lorem ipsum.</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-arrows-turn-to-dots text-primary"></i>
-            <p>Nemo Enim</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-object-group"></i>
-            <p>Dirada Pack</p>
-          </div>
-        </div>
-      
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-infinity text-primary"></i>
-            <p>Lorem ipsum.</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-regular fa-star text-warning"></i>
-            <p>Nemo Enim</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-basketball text-danger"></i>
-            <p>Dirada Pack</p>
-          </div>
-        </div>
-      
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-graduation-cap text-success"></i>
-            <p>Lorem ipsum.</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-window-restore"></i>
-            <p>Nemo Enim</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-arrow-trend-up text-danger"></i>
-            <p>Dirada Pack</p>
-          </div>
-        </div>
-      
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-fire text-warning"></i>
-            <p>Lorem ipsum.</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-sun text-success"></i>
-            <p>Nemo Enim</p>
-          </div>
-          <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-            <i class="fa-solid fa-video text-info"></i>
-            <p>Dirada Pack</p>
-          </div>
-        </div>
-      </div>
-      
-
-
-    </section> -->
-
 
     <!-- About section -->
-<section id="About" class="py-5">
-  <div class="text-center">
-    <h1 class="about-heading">ABOUT</h1>
-    <p class="text-center fs-3 fw-bold">
-      Learn More <span class="heading-span-style">About Us</span>
-    </p> 
-  </div>
+    <section class="py-5" id="about">
+      <h2 class="text-center heading-style">About</h2>
+      <p class="text-center fs-3 fw-bold">
+        Learn More <span class="heading-span-style">About Us</span>
+      </p>
 
-  <div class="container mt-5 p-4 text-slide-in">
-    <div class="row gy-5">
-      <!-- النص الجانبي -->
-      <div class="col-sm-12 col-lg-5 p-5">
-        <h3 class="mb-4">Voluptatem dignissimos provident quasi</h3>
-        <p class="dongo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-        </p>
-        <button type="button" class="btn btn-outline-danger btn-sm about-btn">
-          <span>ABOUT US</span> 
-          <i class="fa fa-chevron-right text-danger pt-1"></i> 
-        </button> 
+      <div class="container mt-5 p-4 text-slide-in">
+        <div class="row gy-5">
+          <div class="col-sm-12 col-lg-5 p-5">
+            <h3 class="mb-4">Voluptatem dignissimos provident quasi</h3>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
+            </p>
+            <button type="button" class="btn btn-outline-danger about-btn">
+              <span>ABOUT US</span>
+              <i class="fa fa-chevron-right text-danger pt-3"></i>
+            </button>
+          </div>
+
+          <div class="col-sm-12 col-lg-3">
+            <div class="row mb-4">
+              <i class="fa fa-briefcase"></i>
+              <h3>Corporis voluptates sit</h3>
+              <p>
+                Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                laboris nisi ut aliquip
+              </p>
+            </div>
+
+            <div class="row">
+              <i class="fa-solid fa-tower-broadcast"></i>
+              <h3>Labore consequatur</h3>
+              <p>
+                Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                maiores omnis facere
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <div class="row mb-4">
+              <i class="fa fa-gem"></i>
+              <h3>Ullamco laboris nisi</h3>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt
+              </p>
+            </div>
+
+            <div class="row">
+              <i class="fa-solid fa-tv"></i>
+              <h3>Beatae veritatis</h3>
+              <p>
+                Expedita veritatis consequuntur nihil tempore laudantium vitae
+                denat pacta
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- الكروت الجانبية -->
-      <div class="col-sm-12 col-lg-3">
-        <div class="text-center mb-4">
-          <i class="fa fa-briefcase fa-2x text-danger mb-2"></i>
-          <h3 class="hover-title">Corporis voluptates sit</h3>
-          <p class="dongo">
-            Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
-          </p>
-        </div>
-
-        <div class="text-center">
-          <i class="fa-solid fa-tower-broadcast fa-2x text-danger mb-2"></i>
-          <h3 class="hover-title">Labore consequatur</h3>
-          <p class="dongo">
-            Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
-          </p>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-lg-4">
-        <div class="text-center mb-4">
-          <i class="fa fa-gem fa-2x text-danger mb-2"></i>
-          <h3 class="hover-title">Ullamco laboris nisi</h3>
-          <p class="dongo">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          </p>
-        </div>
-
-        <div class="text-center">
-          <i class="fa-solid fa-tv fa-2x text-danger mb-2"></i>
-          <h3 class="hover-title">Beatae veritatis</h3>
-          <p class="dongo">
-            Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Services section -->
-<section id="Services" class="py-5">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="title">Services</h2>
+    <!--Services section  -->
+    <section class="py-5" id="Services">
+      <h2 class="text-center heading-style">Services</h2>
       <p class="text-center fs-3 fw-bold">
         Check Our <span class="heading-span-style">Services</span>
-      </p> 
-    </div>
+      </p>
 
-    <div class="row gy-2">
-      <!-- العمود الأول -->
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-eye text-warning"></i>
-          <p>Lorem ipsum.</p>
+      <div class="container text-slide-in">
+        <div class="row gx-4 mb-5">
+          <div class="col-lg-3 mb-4 card-container ">
+            <div class="card-design">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                accusantium?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 card-container">
+            <div class="card-design">
+              <i class="fa-solid fa-satellite-dish"></i>
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                accusantium?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 card-container">
+            <div class="card-design">
+              <i class="fa-solid fa-calendar"></i>
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                accusantium?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 card-container">
+            <div class="card-design">
+              <i class="fa-solid fa-wave-square"></i>
+              <h3>Lorem Ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                accusantium?
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-arrows-turn-to-dots text-primary"></i>
-          <p>Nemo Enim</p>
-        </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-object-group"></i>
-          <p>Dirada Pack</p>
+
+        <div class="row gy-2">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-eye text-warning"></i>
+              <p>Lorem ipsum.</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-arrows-turn-to-dots text-primary"></i>
+              <p>Nemo Enim</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-object-group"></i>
+              <p>Dirada Pack</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-infinity text-primary"></i>
+              <p>Lorem ipsum.</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-regular fa-star text-warning"></i>
+              <p>Nemo Enim</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-basketball text-danger"></i>
+              <p>Dirada Pack</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-graduation-cap text-success"></i>
+              <p>Lorem ipsum.</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-window-restore"></i>
+              <p>Nemo Enim</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-arrow-trend-up text-danger"></i>
+              <p>Dirada Pack</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-fire text-warning"></i>
+              <p>Lorem ipsum.</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-sun text-success"></i>
+              <p>Nemo Enim</p>
+            </div>
+            <div
+              class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2"
+            >
+              <i class="fa-solid fa-video text-info"></i>
+              <p>Dirada Pack</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- العمود الثاني -->
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-infinity text-primary"></i>
-          <p>Lorem ipsum.</p>
-        </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-regular fa-star text-warning"></i>
-          <p>Nemo Enim</p>
-        </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-basketball text-danger"></i>
-          <p>Dirada Pack</p>
-        </div>
-      </div>
-
-      <!-- العمود الثالث -->
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-graduation-cap text-success"></i>
-          <p>Lorem ipsum.</p>
-        </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-window-restore"></i>
-          <p>Nemo Enim</p>
-        </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-arrow-trend-up text-danger"></i>
-          <p>Dirada Pack</p>
-        </div>
-      </div>
-
-      <!-- العمود الرابع -->
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-fire text-warning"></i>
-          <p>Lorem ipsum.</p>
-        </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-sun text-success"></i>
-          <p>Nemo Enim</p>
-        </div>
-        <div class="d-flex card-hover mb-4 justify-content-center align-items-center gap-3 border border-secondary-subtle py-2">
-          <i class="fa-solid fa-video text-info"></i>
-          <p>Dirada Pack</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- call -->
-   <!-- call -->
-<section class="call d-flex justify-content-center align-items-center flex-column text-white text-center">
-  <h2>Call To Action</h2>
-  <p class="w-50">
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <button type="button" class="btn btn-outline-light action-btn">
-    Call To Action
-  </button>
-</section>
-
-<section id="Portfolio" class="py-5">
-  <h2 class="text-center heading-style">Portfolio</h2>
-  <p class="text-center fs-3 fw-bold">
-    Check Our <span class="heading-span-style">Portfolio</span>
-  </p>
-
-  <!-- ================================================================= -->
-  <ul class="nav nav-pills mb-3 w-25 m-auto" id="pills-tab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-        ALL
+    <!-- call section -->
+    <section
+      class="call d-flex justify-content-center align-items-center flex-column text-white text-center"
+    >
+      <h2>Call To Action</h2>
+      <p class="w-50">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <button type="button" class="btn btn-outline-light">
+        Call To Action
       </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-        App
-      </button>
-    </li>
+    </section>
 
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-        Brand
-      </button>
-    </li>
-  </ul>
+    <!-- Portfolio -->
+    <section class="portfolio">
+      <h2 class="text-center heading-style">Portfolio</h2>
+      <p class="text-center fs-3 fw-bold">
+        Check Our <span class="heading-span-style">Portfolio</span>
+      </p>
 
-  <div class="tab-content" id="pills-tabContent">
-    <!-- قسم ALL -->
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-      <div class="grid">
-        <!-- الصورة مع الأيقونات -->
-        <div class="card-portfolio">
-          <img src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="All Image 1" />
-          <div class="caption">
-            <div class="icons">
-              <i class="fa fa-search"></i>
-              <i class="fa fa-link"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card-portfolio">
-          <img src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="All Image 2" />
-          <div class="caption">
-            <div class="icons">
-              <i class="fa fa-search"></i>
-              <i class="fa fa-link"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card-portfolio">
-          <img src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="All Image 3" />
-          <div class="caption">
-            <div class="icons">
-              <i class="fa fa-search"></i>
-              <i class="fa fa-link"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- قسم ِApp -->
-    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-      <div class="grid">
-        <div class="card-portfolio">
-          <img src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="Design Image 1" />
-          <div class="caption">
-            <div class="icons">
-              <i class="fa fa-search"></i>
-              <i class="fa fa-link"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card-portfolio">
-          <img src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="Design Image 2" />
-          <div class="caption">
-            <div class="icons">
-              <i class="fa fa-search"></i>
-              <i class="fa fa-link"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     <!-- Brand -->
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-      <div class="grid">
-        <!-- الصورة مع الأيقونات -->
-        <div class="card-portfolio">
-          <img src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="All Image 1" />
-          <div class="caption">
-            <div class="icons">
-              <i class="fa fa-search"></i>
-              <i class="fa fa-link"></i>
-            </div>
-          </div>
-        </div>
+      <!-- ================================================================= -->
+      <ul class="nav nav-pills mb-3 w-25 m-auto" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            ALL
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            Brand
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Design
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-graphic"
+            type="button"
+            role="tab"
+            aria-controls="pills-graphic"
+            aria-selected="false"
+          >
+            Graphics
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+         
       
-      
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="price" class="mx-3 my-5">
-  <h2 class="text-center heading-style">Pricing</h2>
-  <p class="text-center fs-3 fw-bold mb-4">
-    Our Competing <span class="heading-span-style">Pricing</span>
-  </p>
-
-  <div class="container text-slide-in">
-    <div class="row d-flex mt-5 align-items-center">
-      <!-- Free Plan -->
-      <div class="col-lg-4 mb-4">
-        <div class="pricing-card p-4 text-center shadow-sm">
-          <h3>Free Plan</h3>
-          <div><i class="fa-solid fa-box fs-2 icon-style"></i></div>
-          <p class="price">
-            <sup>$</sup><span>0</span><small>/month</small>
-          </p>
-          <ul class="text-start">
-            <li><i class="fa-solid fa-check text-success"></i> Quam adipiscing vitae proin</li>
-            <li><i class="fa-solid fa-check text-success"></i> Nec feugiat nisl pretium</li>
-            <li><i class="fa-solid fa-check text-success"></i> Nulla at volutpat diam uteera</li>
-            <li><i class="fa-solid fa-check text-success"></i> Pharetra massa massa ultricies</li>
-            <li><i class="fa-solid fa-check text-success"></i> Massa ultricies mi quis hendrerit</li>
-          </ul>
-          <button class="btn btn-outline-secondary w-100">Buy Now</button>
-        </div>
-      </div>
-
-      <!-- Business Plan -->
-      <div class="col-lg-4 mb-4">
-        <div class="pricing-card p-4 text-center shadow-lg featured">
-          <h3>Business Plan</h3>
-          <div><i class="fa-solid fa-rocket fs-2 icon-style"></i></div>
-          <p class="price">
-            <sup>$</sup><span>29</span><small>/month</small>
-          </p>
-          <ul class="text-start">
-            <li><i class="fa-solid fa-check text-success"></i> Quam adipiscing vitae proin</li>
-            <li><i class="fa-solid fa-check text-success"></i> Nec feugiat nisl pretium</li>
-            <li><i class="fa-solid fa-check text-success"></i> Nulla at volutpat diam uteera</li>
-            <li><i class="fa-solid fa-check text-success"></i> Pharetra massa massa ultricies</li>
-            <li><i class="fa-solid fa-check text-success"></i> Massa ultricies mi quis hendrerit</li>
-          </ul>
-          <button class="btn btn-primary w-100">Buy Now</button>
-        </div>
-      </div>
-
-      <!-- Developer Plan -->
-      <div class="col-lg-4 mb-4">
-        <div class="pricing-card p-4 text-center shadow-sm">
-          <h3>Developer Plan</h3>
-          <div><i class="fa-solid fa-paper-plane fs-2 icon-style"></i></div>
-          <p class="price">
-            <sup>$</sup><span>49</span><small>/month</small>
-          </p>
-          <ul class="text-start">
-            <li><i class="fa-solid fa-check text-success"></i> Quam adipiscing vitae proin</li>
-            <li><i class="fa-solid fa-check text-success"></i> Nec feugiat nisl pretium</li>
-            <li><i class="fa-solid fa-check text-success"></i> Nulla at volutpat diam uteera</li>
-            <li><i class="fa-solid fa-check text-success"></i> Pharetra massa massa ultricies</li>
-            <li><i class="fa-solid fa-check text-success"></i> Massa ultricies mi quis hendrerit</li>
-          </ul>
-          <button class="btn btn-outline-secondary w-100">Buy Now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+        <div class="grid">
+        
+          <div class="card-portfolio tall"><img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+                      class="img-fluid"
+                      alt=""
+                    /></div>
+          <div class="card-portfolio">
+            <img
+            src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          </div>
+          <div class="card-portfolio  w-75">
+            <img
+            src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+            class="img-fluid"
+            alt=""
+          />
+          </div>
+          <div class="card-portfolio large w-50">
+            <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+          </div>
           
+        </div>
+      
+      </div>
+        <div
+         class="tab-pane fade"
+          id="pills-profile"
+          r9le="tabpanel"
+         aria-labelledby="pills-profile-tab"
+          tabindex="0">
+        
+         <section class="my-5">
+            <div class="container">
+             <div class="row gy-4">
+              <div class="col-md-4">
+                  <div class="item position-relative">
+                  <img
+                   src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+                      class="img-fluid"
+                    alt=""
+                   />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                       <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+          <section class="my-5">
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="pills-graphic"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+          <section class="my-5">
+            <div class="container">
+              <div class="row gy-4">
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item position-relative">
+                    <img
+                      src="https://nti-project.vercel.app/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <div class="caption ovelayportfolio">
+                      <div class="">
+                        <h5>WEB DESIGN</h5>
+                        <div class="icons d-flex justify-content-center">
+                          <div
+                            class="icon d-flex justify-content-center align-items-center mx-2"
+                          >
+                            <i
+                              class="fa fa-chain-broken"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div
+                            class="icon d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="price mx-3">
+      <h2 class="text-center heading-style">Pricing</h2>
+      <p class="text-center fs-3 fw-bold mb-4">
+        Our Competing <span class="heading-span-style">Pricing</span>
+      </p>
+
+      <div class="container text-slide-in">
+        <div class="row d-flex mt-5 align-items-center ">
+        <div class="col-lg-4 left-shadow card-left mb-4">
+          <h3 class="text-center">Free Plan</h3>
+          <div class="text-center"><i class="fa-solid fa-box"></i></div>
+          <p class="text-center">
+            <sup class="fs-1 fw-bold maincolor">$</sup
+            ><span class="fs-1 fw-bold maincolor">0</span>
+            <span class="text-secondary">/month</span>
+          </p>
+
+          <ul class="p-4">
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p class="">Quam adipiscing vitae proin</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Nec feugiat nisl pretium</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Nulla at volutpat diam uteera</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Pharetra massa massa ultricies</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Massa ultricies mi quis hendrerit</p>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-outline-secondary d-block mx-auto"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 fs-5 card-middle mb-4">
+          <h3 class="text-center">Business Plan</h3>
+          <div class="text-center maincolor">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <p class="text-center maincolor">
+            <sup class="fs-1 fw-bold maincolor">$</sup
+            ><span class="fs-1 fw-bold maincolor">29</span>
+            <span class="text-secondary">/month</span>
+          </p>
+          <ul class="p-4">
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p class="">Quam adipiscing vitae proin</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Nec feugiat nisl pretium</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Nulla at volutpat diam uteera</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Pharetra massa massa ultricies</p>
+            </li>
+            <li class="d-flex  gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Massa ultricies mi quis hendrerit</p>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-outline-secondary d-block mx-auto"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 card-left">
+          <h3 class="text-center">Developer Plan</h3>
+          <div class="text-center"><i class="fa-solid fa-paper-plane"></i></div>
+          <p class="text-center">
+            <sup class="fs-1 fw-bold maincolor">$</sup
+            ><span class="fs-1 fw-bold maincolor">49</span>
+            <span class="text-secondary">/month</span>
+          </p>
+          <ul class="p-4">
+            <li class="d-flex gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p class="">Quam adipiscing vitae proin</p>
+            </li>
+            <li class="d-flex gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Nec feugiat nisl pretium</p>
+            </li>
+            <li class="d-flex gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Nulla at volutpat diam uteera</p>
+            </li>
+            <li class="d-flex gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Pharetra massa massa ultricies</p>
+            </li>
+            <li class="d-flex gap-2 align-items-center">
+              <i class="text-success fa-solid fa-check fs-14"></i>
+              <p>Massa ultricies mi quis hendrerit</p>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-outline-secondary d-block mx-auto"
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
 
     <!-- Frequently Asked Questions -->
     <section class="w-75 mx-auto mt-5">
@@ -787,340 +1072,360 @@
     </section>
 
     <!-- team  -->
-    
-    <section class="py-5" id="Team">
+    <section class="team " id="team">
       <h2 class="text-center heading-style">Team</h2>
       <p class="text-center fs-3 fw-bold mb-4">
         Section Title <span class="heading-span-style">Direda Flowed</span>
       </p>
-    
+
       <div class="container">
         <div class="row">
-          <!-- Member Card -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-1.jpg" alt="Walter White" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
-              </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">Walter White</h5>
-                <small class="text-muted">Chief Executive Officer</small>
-              </div>
-            </div>
-          </div>
-    
-          <!-- نسخ الكارت ده لباقي الأعضاء -->
-          <!-- Member 2 -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-2.jpg" alt="Sarah Johnson" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
-              </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">Sarah Johnson</h5>
-                <small class="text-muted">Product Manager</small>
+          <div class="col-lg-3 p-3">
+            <div  class="team-card-style">
+              <div class="position-relative img-card">
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-1.jpg"
+                alt=""
+              />
+             
+              <div class="d-flex justify-content-between align-items-center px-5 pt-3 position-absolute bottom-0 left-0 w-100 card-icon-hover">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div> </div>
+              <div class="bg-white text-center py-3">
+                <h4>Walter White</h4>
+                <p>Chief Executive Officer</p>
               </div>
             </div>
           </div>
-    
-          <!-- Member 3 -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-3.jpg" alt="William Anderson" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
+          <div class="col-lg-3 p-3">
+            <div  class="team-card-style">
+              <div class="position-relative img-card" >
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-2.jpg"
+                alt=""
+              />
+              <div class="d-flex justify-content-between align-items-center px-5 pt-3 position-absolute bottom-0 left-0 w-100 card-icon-hover">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
               </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">William Anderson</h5>
-                <small class="text-muted">CTO</small>
               </div>
-            </div>
-          </div>
-    
-          <!-- Member 4 -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-4.jpg" alt="Amanda Jepson" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
-              </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">Amanda Jepson</h5>
-                <small class="text-muted">Accountant</small>
+              <div class="text-center py-3">
+                <h4>Sarah Jhonson</h4>
+                <p>Product Manager</p>
               </div>
             </div>
           </div>
-    
+          <div class="col-lg-3 p-3">
+            <div  class="team-card-style">
+              <div class="position-relative img-card" >
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-3.jpg"
+                alt=""
+              />
+              <div class="d-flex justify-content-between align-items-center px-5 pt-3 position-absolute bottom-0 left-0 w-100 card-icon-hover">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              </div>
+              <div class="text-center py-3">
+                <h4>William Anderson</h4>
+                <p>CTO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 p-3">
+            <div class="team-card-style">
+              <div class="position-relative img-card" >
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-4.jpg"
+                alt=""
+              />
+              <div class="d-flex justify-content-between align-items-center px-5 pt-3 position-absolute bottom-0 left-0 w-100 card-icon-hover">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              </div>
+              <div class="text-center py-3">
+                <h4>Amanda Jepson</h4>
+                <p>Accountant</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5" id="Team">
+
+
+
+    <section class="team" id="team">
       <h2 class="text-center heading-style">Team</h2>
       <p class="text-center fs-3 fw-bold mb-4">
         Section Title <span class="heading-span-style">Direda Flowed</span>
       </p>
-    
+
       <div class="container">
         <div class="row">
-          <!-- Member Card -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-1.jpg" alt="Walter White" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
+          <div class="col-lg-3 p-3">
+            <div  class="team-card-style">
+              <div class="position-relative img-card">
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-1.jpg"
+                alt=""
+              />
+             <div class="position-absolute bottom-0 left-0 w-100 h-100 card-icon-hover2 content">
+              <div class="position-absolute bottom-0 left-0 w-100 h-100 card-icon-hover2 d-flex flex-column justify-content-center align-items-center">
+                  <div class="d-flex justify-content-between w-50 ">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div> 
+            <div class=" text-center py-3">
+                <h4>Walter White</h4>
+                <p>Chief Executive Officer</p>
               </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">Walter White</h5>
-                <small class="text-muted">Chief Executive Officer</small>
               </div>
+            
+
+             </div>
+            </div>
+              
             </div>
           </div>
-    
-          <!-- نسخ الكارت ده لباقي الأعضاء -->
-          <!-- Member 2 -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-2.jpg" alt="Sarah Johnson" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
+          <div class="col-lg-3 p-3">
+            <div  class="team-card-style">
+              <div class="position-relative img-card">
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-2.jpg"
+                alt=""
+              />
+             <div class="position-absolute bottom-0 left-0 w-100 h-100 card-icon-hover2 d-flex flex-column justify-content-center align-items-center">
+              
+              <div class="d-flex justify-content-between w-50   ">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div> 
+            <div class=" text-center py-3">
+                <h4>Sarah Jhonson</h4>
+                <p>Product Managerr</p>
               </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">Sarah Johnson</h5>
-                <small class="text-muted">Product Manager</small>
-              </div>
+             </div>
+            </div>
+              
             </div>
           </div>
-    
-          <!-- Member 3 -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-3.jpg" alt="William Anderson" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
+          <div class="col-lg-3 p-3">
+            <div  class="team-card-style">
+              <div class="position-relative img-card">
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-3.jpg"
+                alt=""
+              />
+             <div class="position-absolute bottom-0 left-0 w-100 h-100 card-icon-hover2 d-flex flex-column justify-content-center align-items-center">
+              
+              <div class="d-flex justify-content-between w-50   ">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div> 
+            <div class=" text-center py-3">
+                <h4>William Anderson</h4>
+                <p>CTO</p>
               </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">William Anderson</h5>
-                <small class="text-muted">CTO</small>
-              </div>
+             </div>
+            </div>
+              
             </div>
           </div>
-    
-          <!-- Member 4 -->
-          <div class="col-lg-3 col-md-6 p-3">
-            <div class="team-card text-center shadow-sm rounded-3 overflow-hidden">
-              <div class="position-relative">
-                <img class="img-fluid team-img" src="https://nti-project.vercel.app/assets/img/team/team-4.jpg" alt="Amanda Jepson" />
-                <div class="social-icons position-absolute w-100 bottom-0 start-0 d-flex justify-content-center gap-3 py-2">
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                </div>
+         <div class="col-lg-3 p-3">
+            <div  class="team-card-style">
+              <div class="position-relative img-card">
+                <img
+                class="img-fluid"
+                src="https://nti-project.vercel.app/assets/img/team/team-4.jpg"
+                alt=""
+              />
+             <div class="position-absolute bottom-0 left-0 w-100 h-100 card-icon-hover2 d-flex flex-column justify-content-center align-items-center">
+              
+              <div class="d-flex justify-content-between w-50   ">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div> 
+            <div class=" text-center py-3">
+                <h4>Amanda Jepson</h4>
+                <p>Accountant</p>
               </div>
-              <div class="bg-white py-3">
-                <h5 class="mb-1">Amanda Jepson</h5>
-                <small class="text-muted">Accountant</small>
-              </div>
+             </div>
+            </div>
+              
             </div>
           </div>
-    
         </div>
       </div>
     </section>
-    
-  
+
     <!-- contact -->
-     <section id="Contact" class="py-5">
+     <section>
       <h2 class="text-center heading-style">Contact</h2>
       <p class="text-center fs-3 fw-bold mb-4">
         Need Help? <span class="heading-span-style">Contact us</span>
       </p>
-    
-      <div class="container">
-        <!-- Google Map -->
-        <div class="row mb-5">
-          <div class="col-12">
-            <iframe class="w-100 map-h rounded-3 shadow-sm" height="350"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-              frameborder="0" allowfullscreen></iframe>
+
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <iframe class="w-100 map-h" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus
+       " frameborder="0"></iframe>
           </div>
         </div>
-    
-        <!-- Contact Info + Form -->
-        <div class="row g-4">
-          <!-- Contact Info -->
-          <div class="col-lg-4">
-            <div class="contact-info-box d-flex align-items-start gap-3 mb-4">
-              <i class="contact-icon fa-solid fa-location-dot"></i>
+
+        <div class="row mt-5">
+          <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <i class="contact-icon fa-solid fa-location-dot d-flex justify-content-center align-items-center"></i>
               <div>
-                <h5>Address</h5>
-                <p class="maincolortxt mb-0"> Diarb Negm, Ash Sharqia, Egypt</p>
+                <h4>Address</h4>
+                <p class="maincolortxt">A108 Adam Street, New York, NY 535022</p>
               </div>
             </div>
-    
-            <div class="contact-info-box d-flex align-items-start gap-3 mb-4">
-              <i class="contact-icon fa-solid fa-phone"></i>
+
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <i class="contact-icon fa-solid d-flex justify-content-center align-items-center fa-phone"></i>
               <div>
-                <h5>Call Us</h5>
-                <p class="maincolortxt mb-0 +01143364961">+01143364961</p>
+                <h4>Call Us</h4>
+                <p class="maincolortxt">+1 5589 55488 55</p>
               </div>
             </div>
-    
-            <div class="contact-info-box d-flex align-items-start gap-3 mb-4">
-              <i class="contact-icon fa-solid fa-envelope"></i>
+
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <i class="contact-icon fa-solid d-flex justify-content-center align-items-center fa-envelope"></i>
               <div>
-                <h5>Email Us</h5>
-                <p class="maincolortxt mb-0">shimaa.fouad002@gmail.com</p>
+                <h4>Email Us</h4>
+                <p class="maincolortxt">info@example.com</p>
               </div>
             </div>
           </div>
-    
-          <!-- Contact Form -->
-          <div class="col-lg-8">
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" name="name" placeholder="Your Name">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email">
-                </div>
-                <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject">
-                </div>
-                <div class="col-12">
-                  <textarea name="message" class="form-control" rows="6" placeholder="Message"></textarea>
-                </div>
-                <div class="col-12 text-end">
-                  <button type="submit" class="btn btn-danger px-4 send-btn">Send Message</button>
+          <div class="col-sm-12 col-lg-8">
+            <form class="p-0" >
+              <div class="container">
+                <div class="row">
+                
+                   <div class="row mb-3">
+                    <div class="col-md-6"> <input type="text" class="w-100 p-1 mb-2"  name="name" placeholder="Your Name"></div>
+                    <div class="col-md-6"><input type="email" class="w-100 p-1 mb-2"  name="email" placeholder="Your Email"></div>
+                   </div>
+                
+                  <div class="row mb-4">
+                    <input type="text" class="p-1" name="subject" placeholder="Subject">
+                  </div>
+
+                  <div class="row mb-3">
+                    <textarea name="message" rows="6" class="p-1" id="">
+                      Message
+                    </textarea>
+                  </div>
+                  <button type="button" class="btn btn-outline-danger text-slide-in send-btn">
+                   Send Message
+                  </button>
                 </div>
               </div>
-            </form>
+           
+          </form>
           </div>
         </div>
+
       </div>
-    </section>
-    
- 
+     </section>
 
-
-<!-- ======= Footer ======= -->
 
      <!-- Footer -->
-     <footer class="text-white bg-black py-5">
-      <div class="container">
-     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
-        <div>
-          <h2>Tempo</h2>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. 
-            Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="col-sm-12 col-md-6 d-flex justify-content-between w-50   ">
-              <i class="fa-brands fa-x-twitter"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div> 
+      <footer class="text-white bg-black py-5">
+        <div class="container">
+       <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+          <div>
+            <h2>Tempo</h2>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. 
+              Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+              <div class="col-sm-12 col-md-6 d-flex justify-content-between w-50   ">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div> 
+          </div>
         </div>
-      </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
-        <h2 class="fs-5 ">Useful Links</h2>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Terms of service</a></li>
-          <li><a href="">Privacy policy</a></li>
-        </ul>
-      </div>
+        <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
+          <h2 class="fs-5 ">Useful Links</h2>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Terms of service</a></li>
+            <li><a href="">Privacy policy</a></li>
+          </ul>
+        </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
-        <h2 class="fs-5 ">Our Services</h2>
-        <ul>
-          <li><a href="">Web Design</a></li>
-          <li><a href="">Web Development</a></li>
-          <li><a href="">Product Management</a></li>
-          <li><a href="">Marketing</a></li>
-          <li><a href="">Graphic Design</a></li>
-        </ul>
-      </div>
+        <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
+          <h2 class="fs-5 ">Our Services</h2>
+          <ul>
+            <li><a href="">Web Design</a></li>
+            <li><a href="">Web Development</a></li>
+            <li><a href="">Product Management</a></li>
+            <li><a href="">Marketing</a></li>
+            <li><a href="">Graphic Design</a></li>
+          </ul>
+        </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
-        <h2 class="fs-5 ">Contact Us</h2>
-        <ul>
-          <p>Name:Shimoo Abdo</p>
-          <p>Diarb Negm, Ash Sharqia, Egypt</p>
-          <p>United States</p>
-          <p>Phone: +2 01143364961</p>
-          <p>Email: shimaa.fouad002@gmail.com</p>
-        </ul>
-      </div>
-     </div>
+        <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
+          <h2 class="fs-5 ">Contact Us</h2>
+          <ul>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p>United States</p>
+            <p>Phone: +1 5589 55488 55</p>
+            <p>Email: info@example.com</p>
+          </ul>
+        </div>
+       </div>
 
-     <div class="row w-100 mx-auto text-center bg-dark py-3">
-      <p>© Copyright Tempo All Rights Reserved</p>
-      <p>Designed by <span class="maincolor">BootstrapMade</span></p>
-     </div>
-      </div>
-      
-    </footer>
+       <div class="row w-100 mx-auto text-center bg-dark py-3">
+        <p>© Copyright Tempo All Rights Reserved</p>
+        <p>Designed by <span class="maincolor">BootstrapMade</span></p>
+       </div>
+        </div>
+        
+      </footer>
 
-
-
-    <!-- Scroll to Top Button -->
-<a href="#" id="scrollToTop" class="btn btn-danger rounded-circle position-fixed" 
-style="bottom: 20px; right: 20px; z-index: 999; display: none;">
-<i class="bi bi-arrow-up-short fs-4"></i>
-</a>
-
-    <script src="js/script.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
+      <i class="fa-solid fa-arrow-up upbtn"></i>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
-</html>  
-                                                                                                                                                                                                                                                                                                                                                                                
-
-
-
-
-
-
-
+</html>
